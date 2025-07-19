@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imperial Motorsport</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffd700;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background-color: #1a1a1a;
+    color: #ffd700;
+    padding: 20px;
+}
+header h1 {
+    margin: 10px 0;
+    font-size: 2em;
+}
+.cover {
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.brand {
+    background-color: #1a1a1a;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    box-shadow: 0 0 12px rgba(255,215,0,0.3);
+}
+.brand img {
+    width: 80px;
+    margin: 10px auto;
+}
+.brand h2 {
+    margin: 10px 0;
+    color: #ffd700;
+}
+.brand p {
+    font-size: 0.95em;
+    color: #e6e6e6;
+}
+.btnYellow {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    padding: 10px 14px;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.btnYellow:hover {
+    background-color: #e6c200;
+}
+.price-range {
+    margin-top: 8px;
+    color: #ffd700;
+    font-weight: bold;
+    display: none;
+}
+footer {
+    padding: 20px;
+    background-color: #0a0a0a;
+    color: #ffd700;
+    font-size: 1em;
+}
+hr {
+    margin: 30px auto;
+    width: 80%;
+    border: 1px solid #ffd700;
+}
+</style>
+<script>
+function togglePriceRange(id) {
+    var elem = document.getElementById(id);
+    elem.style.display = elem.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+</head>
+<body>
+
+<header>
+    <h1>Imperial Motorsport</h1>
+    <p>Il tuo concessionario premium di lusso e velocità per le strade di Rat City.</p>
+</header>
+
+<img src="https://iili.io/FjsuQkP.jpg" alt="Imperial Motorsport Copertina" class="cover">
+
+<div class="brand">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Mercedes-Logo.svg" alt="Mercedes Logo">
+    <h2>Mercedes</h2>
+    <p>Classe e potenza per dominare le strade di Rat City.</p>
+    <button class="btnYellow" onclick="togglePriceRange('price-mercedes')">Visualizza fascia prezzo</button>
+    <div class="price-range" id="price-mercedes">Dai 90.000R$ ai 200.000R$</div>
+</div>
+
+<div class="brand">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/BMW.svg" alt="BMW Logo">
+    <h2>BMW</h2>
+    <p>Guidare con precisione, accelerare con stile.</p>
+    <button class="btnYellow" onclick="togglePriceRange('price-bmw')">Visualizza fascia prezzo</button>
+    <div class="price-range" id="price-bmw">Dai 80.000R$ ai 190.000R$</div>
+</div>
+
+<div class="brand">
+    <img src="https://iili.io/FjsuH57.png" alt="Audi Logo">
+    <h2>Audi</h2>
+    <p>Performance e design futuristico per la tua fuga perfetta.</p>
+    <button class="btnYellow" onclick="togglePriceRange('price-audi')">Visualizza fascia prezzo</button>
+    <div class="price-range" id="price-audi">Dai 70.000R$ ai 180.000R$</div>
+</div>
+
+<div class="brand">
+    <img src="https://iili.io/Fj8N14a.png" alt="Maserati Logo">
+    <h2>Maserati</h2>
+    <p>Eleganza italiana con un ruggito che intimorisce.</p>
+    <button class="btnYellow" onclick="togglePriceRange('price-maserati')">Visualizza fascia prezzo</button>
+    <div class="price-range" id="price-maserati">Dai 100.000R$ ai 220.000R$</div>
+</div>
+
+<div class="brand">
+    <img src="https://iili.io/FjevUQ9.png" alt="Ferrari Logo">
+    <h2>Ferrari</h2>
+    <p>Il rosso della passione e della velocità pura.</p>
+    <button class="btnYellow" onclick="togglePriceRange('price-ferrari')">Visualizza fascia prezzo</button>
+    <div class="price-range" id="price-ferrari">Dai 120.000R$ ai 250.000R$</div>
+</div>
+
+<hr>
+
+<footer>
+    <p>Abbiamo qualsiasi tipo di veicolo delle marche qui sopra elencate, che cosa state aspettando? Non perdete altro tempo e fissate un appuntamento con uno dei nostri agenti, vi porterà alla vostra prossima amante a quattro ruote. Imperial Motorsport, il meglio a quattro ruote!</p>
+</footer>
+
+</body>
+</html>
